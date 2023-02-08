@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Created By shopify</title>
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            href="imgs/wordPressLogo.bmp"
+            type="image/x-icon"
+        />
+        <!-- bootstrap icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <!-- bootstrap cdn css -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <!-- bootstrap cdn js -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+        <!-- js -->
+        <!-- <script type="module" defer src="script.js"></script> -->
+        <script defer src="products.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <!-- font from fonts.google.com -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap");
+    </style>
+    <style>
+        body {
+            font-family: "Hind Siliguri", sans-serif;
+        }
+        .card-img {
+            height: 350px;
+            object-fit: cover;
+        }
+    </style>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-bag"></i>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul
+                            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px"
+                        >
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    data-searchable
+                                >
+                                    All
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-searchable>
+                                    Shirts
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-searchable>
+                                    Jeans
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-searchable>
+                                    Shoes
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-searchable>
+                                    Jackets
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    data-searchable
+                                >
+                                    Accessories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            data-searchable
+                                        >
+                                            Watches
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            data-searchable
+                                        >
+                                            Sunglasses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="#"
+                                            data-searchable
+                                        >
+                                            headphones
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input
+                                id="searchInput"
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section
+                class="row row-cols-lg-4 row-cols-md-3 row-cols-1 row-cols-sm-2 text-center w-100 g-4 p-5 p-sm-1 m-0"
+                id="cardContainer"
+            ></section>
+        </main>
+    </body>
+</html>
